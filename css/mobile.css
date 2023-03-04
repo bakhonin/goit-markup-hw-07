@@ -1,0 +1,5 @@
+@media screen and (min-wdth: 480px) {
+    .container {
+      max-width: 426px;
+    }
+  }
