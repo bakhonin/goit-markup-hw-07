@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>WebStudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -29,20 +33,23 @@
         <li class="info-tel"><a class="info link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
     </address>
-</div>
+</div> 
     </header>
-    <main class="page-main">
 
-        <!--Hero-->
+    <!----------- MAIN ------------->
+
+    <main>
+
+        <!----------- HERO ------------->
 
         <section class="hero">
-            <div class="container">
+            <div class="container hero-container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button class="hero-button" type="button" data-modal-open>Order Service</button>
         </div>
         </section>
 
-        <!--Advantages-->
+        <!------------ Advantages ------------>
    
     <section class="strategy-section">
         <div class="container">
@@ -54,7 +61,7 @@
                     <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
                 </div>
-                <h3 class="section-title">Strategy</h3>
+                <h3 class="section-title strategy-title">Strategy</h3>
                 <p class="primery-text strategy-text" >Our goal is to identify the business
                 problem to walk away with the perfect and creative solution.</p>
             </li>
@@ -64,7 +71,7 @@
                     <use href="./images/sprite.svg#icon-clock" ></use>
                 </svg>
                 </div>
-                <h3 class="section-title">Punctuality</h3>
+                <h3 class="section-title strategy-title">Punctuality</h3>
                 <p class="primery-text strategy-text" >Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
             </li>
             <li class="strategy-item">
@@ -73,7 +80,7 @@
                     <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
                 </div>
-                <h3 class="section-title">Diligence</h3>
+                <h3 class="section-title strategy-title">Diligence</h3>
                 <p class="primery-text strategy-text" >Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
             </li>
             <li class="strategy-item">
@@ -82,14 +89,14 @@
                     <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
                 </div>
-                <h3 class="section-title">Technologies</h3>
+                <h3 class="section-title strategy-title">Technologies</h3>
                 <p class="primery-text strategy-text" >Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
             </li>
         </ul>
         </div>
     </section>
 
-         <!--Samples-->
+         <!------------ Samples -------------->
     
     <section class="samples">
         <div class="container">
@@ -102,11 +109,11 @@
         </div>
     </section>
 
-         <!--Team-->
+         <!----------- Team --------------->
 
     <section class="team">
-        <div class="container">
-        <h2 class="page-title">Our Team</h2>
+        <div class="container team-container">
+        <h2 class="page-title page-team-title">Our Team</h2>
         <ul class="team-list list">
             <li class="team-item">
                 <img src="./images/img.jpg" alt="company employee"  width="264" height="260" >
@@ -260,7 +267,7 @@
         </div>
     </section>
 
-                 <!--Customers-->
+                 <!------------- Customers ------------------>
 
     <section class="customers">
         <div class="container">
@@ -314,7 +321,7 @@
     </section>
 </main>
 
-                 <!--Footer-->
+                 <!------------- Footer ----------------->
 
 <footer class="page-footer">
     <div class="container footer-container">
@@ -372,9 +379,9 @@
     </div>
 </footer>
 
-                <!-- MODAL-WINDOW--> 
+                <!--------------- MODAL-WINDOW -----------------> 
 
-<div class="backdrop is-hidden" data-modal>
+ <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <p class="tittle-modal">Leave your contacts and we will call you back</p>
         <form class="modal-form">
@@ -420,16 +427,16 @@
             </svg>
         </button>
     </div>
-</div>
+</div> 
 
-<script>
+<!-- <script>
     const { height: headerHeight } = document
     .querySelector(".header")
     .getBoundingClientRect();
 
     document.body.style.paddingTop = `${headerHeight}px`;
-    </script>
+    </script> -->
 
-<script src="./js/modal.js"></script>
+<script src="./js/modal.js"></script> 
 </body>
 </html>
