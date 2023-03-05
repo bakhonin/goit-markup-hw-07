@@ -1,0 +1,12 @@
+@media screen and (min-width: 370px) {
+    .container {
+      max-width: 426px;
+    }
+
+    .modal {
+        width: 392px;
+        height: 586px;
+        overflow: visible ;
+    }
+
+}

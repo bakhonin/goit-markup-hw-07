@@ -1,5 +1,36 @@
-@media screen and (min-wdth: 480px) {
+@media screen and (min-width: 480px) {
     .container {
       max-width: 426px;
     }
+
+    /* ============== HERO ============= */
+
+    .hero-title {
+    width: 250px;
+    }
+
+    .menu-open-btn {
+      right: 4px;}
+
+    .mob-social-list {
+      justify-content: flex-start;
+      gap: 56px;
+    }
+
+    .menu-mob-info-tel .link {
+      font-size: 36px;
+      line-height: 1.111;
+    }
+
+    /* ============== /HERO ============= */
+
+    /* ============= MODAL-WINDOW ============= */
+
+    .modal {
+        width: 392px;
+        height: 586px;
+    }
+
+    /* ============= /MODAL-WINDOW ============= */
+
   }

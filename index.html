@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile-m.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/desktop.css">
@@ -21,6 +22,11 @@
         <nav class="header-nav">
         <a class="logo link" href="./index.html"> Web<span class="logo-header">Studio</span>    
         </a>
+        <button class="menu-open-btn" type="button" data-menu-open>
+            <svg class="menu-open-btn-icon" width="32" height="22">
+                <use href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+        </button>
         <ul class="site-nav list">
             <li class="menu-item "><a class="link current page-menu" href="./index.html">Studio</a></li>
             <li class="menu-item"><a class="link" href="./portfolio.html"> Portfolio</a></li>
@@ -34,6 +40,62 @@
         </ul>
     </address>
 </div> 
+
+
+<div class="mob-menu" data-menu>
+    <div class="mob-container">
+        <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn" data-menu-close>
+                <svg class="menu-close-btn-icon" width="8" height="8">
+                    <use href="./images/sprite.svg#close-modal"></use>
+                </svg>
+            </button>
+            <ul class="site-mob-nav list">
+                <li class="mob-menu-item link"><a class="link current page-menu" href="./index.html">Studio</a></li>
+                <li class="mob-menu-item link"><a class="link" href="./portfolio.html"> Portfolio</a></li>
+                <li class="mob-menu-item link"><a class="link" href=""> Contacts</a></li>
+            </ul>
+        </div >
+       <div class="mob-menu-bottom">
+            <address class="menu-mob-address-nav">
+                <ul class="menu-mob-tel-mail list">
+                    <li class="menu-mob-info-tel link"><a class="info link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li class="menu-mob-info-mail"><a class="info link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+            </address>
+            <ul class="mob-social-list list">
+                <li class="mob-social-list-item">
+                 <a href="" class="social-list-link">
+                     <svg class="social-list-icon" width="16" height="16">
+                         <use href="./images/sprite.svg#icon-instagram"></use>
+                     </svg>
+                 </a>
+                </li>
+                <li class="mob-social-list-item">
+                 <a href="" class="social-list-link">
+                     <svg class="social-list-icon" width="16" height="16">
+                         <use href="./images/sprite.svg#icon-twitter"></use>
+                     </svg>
+                 </a>
+                </li>
+                <li class="mob-social-list-item">
+                 <a href="" class="social-list-link">
+                     <svg class="social-list-icon" width="16" height="16">
+                         <use href="./images/sprite.svg#icon-facebook"></use>
+                     </svg>
+                 </a>
+                </li>
+                <li class="mob-social-list-item">
+                 <a href="" class="social-list-link">
+                     <svg class="social-list-icon" width="16" height="16">
+                         <use href="./images/sprite.svg#icon-linkedin"></use>
+                     </svg>
+                 </a>
+                </li>
+             </ul>
+       </div >
+    </div >
+</div>
     </header>
 
     <!----------- MAIN ------------->
@@ -116,7 +178,7 @@
         <h2 class="page-title page-team-title">Our Team</h2>
         <ul class="team-list list">
             <li class="team-item">
-                <img src="./images/img.jpg" alt="company employee"  width="264" height="260" >
+                <img  src="./images/img-Guerrero.jpg" srcset="./images/img-Guerrero.jpg 1x, ./images/img-Guerrero@2x.jpg 2x" alt="company employee"  width="264" height="260">
                 <div class="team-card-text">
                 <h3 class="section-title team-title">Mark Guerrero</h3>
                 <p class="primery-text team-text" >Product Designer</p>
@@ -153,7 +215,7 @@
             </div>
             </li>
             <li class="team-item">
-                <img src="./images/img1.jpg" alt="company employee" width="264" height="260" >
+                <img src="./images/img-Ford.jpg" srcset="./images/img-Ford.jpg 1x, ./images/img-Ford@2x.jpg 2x" alt="company employee" width="264" height="260">
                 <div class="team-card-text">
                 <h3 class="section-title team-title">Tom Ford</h3>
                 <p class="primery-text team-text" >Frontend Developer</p>
@@ -190,7 +252,7 @@
             </div>
             </li>
             <li class="team-item">
-                 <img src="./images/img2.jpg" alt="company employee" width="264" height="260" >
+                 <img src="./images/img-Garcia.jpg" srcset="./images/img-Garcia.jpg 1x,./images/img-Garcia@2x.jpg 2x" alt="company employee" width="264" height="260" >
                  <div class="team-card-text">
                  <h3 class="section-title team-title">Camila Garcia</h3>
                  <p class="primery-text team-text" >Marketing</p>
@@ -227,7 +289,7 @@
                 </div>
             </li>
             <li class="team-item">
-                <img src="./images/img3.jpg" alt="company employee" width="264" height="260" >
+                <img  src="./images/img-Wilson.jpg" srcset="./images/img-Wilson.jpg 1x, ./images/img-Wilson@2x.jpg 2x" alt="company employee" width="264" height="260" >
                 <div class="team-card-text">
                 <h3 class="section-title team-title">Daniel Wilson</h3>
                 <p class="primery-text team-text" >UI Designer</p>
@@ -429,13 +491,17 @@
     </div>
 </div> 
 
-<!-- <script>
+<script src="./mobile-menu.js"></script>
+
+<!-- <script src="./js/menu.js"></script> -->
+
+<script>
     const { height: headerHeight } = document
     .querySelector(".header")
     .getBoundingClientRect();
 
     document.body.style.paddingTop = `${headerHeight}px`;
-    </script> -->
+    </script>
 
 <script src="./js/modal.js"></script> 
 </body>

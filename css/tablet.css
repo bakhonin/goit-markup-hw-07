@@ -1,17 +1,24 @@
-@media screen and (min-wdth: 768px) {
+@media screen and (min-width: 768px) {
     .container {
-      max-width: 766px;
+      max-width: 768px;
     }
 
-    .header-container {
-        display: flex;
-        align-items: center;
-      }
+    .menu-open-btn,
+    .mob-menu {
+      display: none;
+    }
 
-    .header-nav {
-        display: flex;
-        align-items: center;
-      }
+     /* ===============HEADER============== */
+
+     .header {
+      display: flex;
+      align-items: center;
+      padding: 0;
+     }
+
+     .logo-header {
+      margin-right: 120px;
+     }
 
     .site-nav {
         display: flex;
@@ -44,6 +51,8 @@
       .menu-item {
         position: relative;
         display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
       }
       
       .menu-item:not(:last-child) {
@@ -58,7 +67,7 @@
         top: 0;
       
         display: block;
-        margin-top: 46px;
+        margin-top: 65px;
         content: '';
         width: 100%;
         height: 4px;
@@ -76,30 +85,28 @@
       }
       
       .address-nav {
-        margin-left: auto;
+        margin-left: 118px;
         display: flex;
-        align-items: center;
+       justify-content: center;
+       align-items: center;
+        
       }
       
       .tel-mail {
         display: flex;
-        align-items: center;
-      }
-      
-      .info-tel {
-        margin-left: 40px;
+        flex-direction: column;
       }
       
       .tel-mail .info {
         padding-top: 24px;
-        padding-bottom: 24px;
+        padding-bottom: 22px;
       
         color: var(--primery-text-color);
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+        font-size: 12px;
+        line-height: 1.166;
+        letter-spacing: 0.04em;
       
         transition-property: color;
         transition-duration: 250ms;
@@ -109,4 +116,59 @@
       .tel-mail .info:focus {
         color: var(--accent-color);
       }
+
+      /* ===============/HEADER============== */
+      
+      .hero {
+      
+      padding-bottom: 108px;
+      margin-left: auto;
+      margin-right: auto;
+    
+      text-align: center;
+      background-color: var(--secondary-background-color);
+    
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tablet.jpg);
+      background-size: cover;
+      }
+
+      @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tablet@2x.jpg);
   }
+}
+
+     /* ===============STRATEGY-SECTION============= */
+
+     .strategy-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+     }
+
+     .strategy-item {
+      flex-basis: calc((100% - 24px) / 2);
+     }
+
+     .strategy-item:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+      /* ===============TEAM-SECTION============= */
+
+      .team-list {
+        display: flex;
+        row-gap: 64px;
+        column-gap: 24px;
+      }
+
+      .team-item {
+        width: 264px;
+      }
+
+    
+    }
