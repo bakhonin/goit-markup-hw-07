@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
     .container {
-      max-width: 768px;
+      max-width: 766px;
     }
 
     .menu-open-btn,
@@ -168,6 +168,48 @@
 
       .team-item {
         width: 264px;
+      }
+
+      /* ===============CUSTOMERS============= */
+
+      .customers-list{
+        gap: 72px 24px;
+      }
+      .customers-item {
+        width: 168px;
+      }
+
+      /* ===============FOOTER============= */
+
+      .footer-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+
+      .logo-text-footer {
+        margin-bottom: 72px;
+        margin-right: 24px;
+       margin-left: 93px;
+       align-items: flex-start;
+      }
+
+      .footer-social {
+        align-items: flex-start;
+      }
+
+      .subscribe-form-input {
+        width: 265px;
+      }
+
+      .footer-subscribe {
+        align-items: flex-start; 
+        margin-left: 93px; 
+      }
+
+      .subscribe-form-btn {
+        margin-left: 24px;
       }
 
     
