@@ -205,6 +205,9 @@
   gap: 48px 24px;
 }
 
-
+.portfolio-link:hover .overlay-portfolio,
+.portfolio-link:focus .overlay-portfolio {
+  transform: translate(0, 0);
+}
 
   }

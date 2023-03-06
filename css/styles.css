@@ -880,10 +880,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover .overlay-portfolio,
-.portfolio-link:focus .overlay-portfolio {
-  transform: translate(0, 0);
-}
 
 .portfolio-link {
   display: block;
