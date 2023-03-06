@@ -212,5 +212,22 @@
         margin-left: 24px;
       }
 
+      /* ============================PORTFOLIO.HTML========================== */
+
+      .filters-list {
+        justify-content: center;
+      }
+
+      .portfolio-list {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        gap: 72px 24px;
+      }
+
+      .portfolio-item:not(:last-child) {
+        margin-bottom: 0px;
+      }
+
     
     }

@@ -188,6 +188,23 @@
   margin-right: 80px;
 }
 
+/* ===============PORTFOLIO-SECTION============= */
+
+.filters-list {
+  margin-bottom: 72px;
+  text-align: center;
+  gap:24px;
+}
+
+.section-portfolio {
+  padding-bottom: 120px;
+  padding-top: 100px;
+}
+
+.portfolio-list {
+  gap: 48px 24px;
+}
+
 
 
   }
