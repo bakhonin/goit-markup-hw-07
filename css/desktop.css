@@ -5,15 +5,27 @@
 
     /* ===============HEADER============== */
 
+    .page-menu::after {
+      opacity: 0;
+      transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .page-menu:hover::after,
+    .page-menu:focus::after {
+      opacity: 1;
+    
+    }
+
     .logo {
       font-size: 18px;
-      line-height: 1.333;
+      line-height: 1.33;
     }
 
     .logo-header {
       margin-right: 76px;
       font-size: 18px;
-      line-height: 1.333;}
+      line-height: 1.33;
+    }
 
       .address-nav {
         margin-left: auto;
@@ -48,7 +60,7 @@
   (min-resolution: 2dppx) {
   .hero {
    
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office-desktop@2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office-desktop@2x.jpg);
   }
 }
 
@@ -63,6 +75,18 @@
   flex-wrap: nowrap;
   gap: 24px;
 }
+
+.section-title.strategy-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+ }
+
+ .strategy-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+ }
 
 .strategy-list-icon {
   display: block;
@@ -189,6 +213,16 @@
 }
 
 /* ===============PORTFOLIO-SECTION============= */
+
+.portfolio-menu::after {
+  opacity: 0;
+  transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-menu:hover::after,
+.portfolio-menu:focus::after {
+  opacity: 1;
+}
 
 .filters-list {
   margin-bottom: 72px;

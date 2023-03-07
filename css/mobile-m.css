@@ -3,6 +3,18 @@
       max-width: 426px;
     }
 
+    .hero-title {
+      width: 320px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.11;
+    }
+
+    .team-list {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .modal {
         width: 392px;
         height: 586px;

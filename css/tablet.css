@@ -73,15 +73,6 @@
         height: 4px;
         background-color: var(--accent-color);
         border-radius: 2px;
-      
-        opacity: 0;
-        transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      
-      .page-menu:hover::after,
-      .page-menufocus::after {
-        opacity: 1;
-      
       }
       
       .address-nav {
@@ -132,12 +123,19 @@
       background-size: cover;
       }
 
+      .hero-title{
+        width: 496px;
+        font-size: 56px;
+        line-height: 60px;
+      }
+
       @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tablet@2x.jpg);
   }
+  
 }
 
      /* ===============STRATEGY-SECTION============= */
@@ -148,6 +146,15 @@
       justify-content: space-between;
       margin-left: auto;
       margin-right: auto;
+     }
+
+     .strategy-title {
+      display: flex;
+      margin-left: auto;
+
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.11;
      }
 
      .strategy-item {
@@ -213,6 +220,22 @@
       }
 
       /* ============================PORTFOLIO.HTML========================== */
+
+      .portfolio-menu::after {
+        content: '';
+      
+        position: absolute;
+        left: 0;
+        top: 0;
+      
+        display: block;
+        margin-top: 65px;
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+      }
 
       .filters-list {
         justify-content: center;

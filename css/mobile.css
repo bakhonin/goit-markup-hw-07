@@ -5,10 +5,6 @@
 
     /* ============== HERO ============= */
 
-    .hero-title {
-    width: 250px;
-    }
-
     .menu-open-btn {
       right: 4px;}
 
@@ -19,7 +15,7 @@
 
     .menu-mob-info-tel .link {
       font-size: 36px;
-      line-height: 1.111;
+      line-height: 1.11;
     }
 
     /* ============== /HERO ============= */
