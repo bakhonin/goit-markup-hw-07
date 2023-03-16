@@ -252,5 +252,8 @@
         margin-bottom: 0px;
       }
 
-    
+      .modal {
+        transform: translate(-50%, 0%);
+      }
+
     }
